@@ -168,7 +168,7 @@ CodiMD supports three different styles of header link. Take **3.1. Good Morning 
 
 #### PlantUML
 
-CodiMD support PlanUML out of box, however you can specify your own PlanUML instance:
+CodiMD supports PlantUML out of box, however you can specify your own PlantUML instance:
 
 | Environment Variable | config.json       | Example Value                                  | Description                  |
 | -------------------- | ----------------- | ---------------------------------------------- | ---------------------------- |
