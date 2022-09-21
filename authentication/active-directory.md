@@ -10,6 +10,7 @@ CMD_LDAP_SEARCHBASE=dc=internal,dc=example,dc=com
 CMD_LDAP_SEARCHFILTER=(&(objectcategory=person)(objectclass=user)(|(sAMAccountName={{username}})(mail={{username}})))
 CMD_LDAP_USERIDFIELD=sAMAccountName
 CMD_LDAP_PROVIDERNAME=Example Inc AD
+CMD_LDAP_TLS_CA=/etc/ssl/certs/ca-certificates.crt,/etc/ssl/certs/myca.crt
 ```
 
 ## Notes
@@ -25,6 +26,8 @@ CMD_LDAP_PROVIDERNAME=Example Inc AD
 - `CMD_LDAP_USERIDFIELD` means: we want to use `sAMAccountName` as the unique identifier for the account itself.
 
 - `CMD_LDAP_PROVIDERNAME` is just the name on the login page above the username and password field.
+
+- `CMD_LDAP_TLS_CA` is the CA location, seperated by comma.
 
 ## json format:
 
